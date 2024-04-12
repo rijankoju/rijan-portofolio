@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "homepage": "http://rijankoju.com.np/",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "NODE_VERSION=16 react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",

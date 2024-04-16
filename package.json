@@ -1,17 +1,22 @@
 {
   "private": true,
-  "name": "personal-portfolio",
+  "name": "rijan-portfolio",
   "version": "1.0.0",
+  "description": "My Cloudflare Worker",
+  "license": "Rijan License",
+  "author": "Your Name",
   "homepage": "http://rijankoju.com.np/",
+  "main": "index.js",
   "scripts": {
-    "build": "NODE_VERSION=16 react-scripts build",
+    "build": "react-scripts build webpack",
     "predeploy": "npm run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
-    "test": "react-scripts test"
+    "test": "react-scripts test echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
+    "@cloudflare/wrangler": "^1.21.0",
     "baseui": "^9.109.0",
     "bootstrap": "^4.6.0",
     "fs": "0.0.1-security",

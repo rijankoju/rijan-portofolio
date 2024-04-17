@@ -9,3 +9,7 @@ format = "service-worker"
 
 [build]
 command = "yarn build"
+main = "src/index.js" 
+
+[dependencies]
+react-rounded-image = "2.0.11"

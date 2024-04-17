@@ -4,7 +4,7 @@ account_id = "4ea2ca30b4c56e40752ff78d120fae93"
 workers_dev = true
 
 [build.upload]
-
+pages_build_output_dir = "./build"
 format = "service-worker"
 
 [build]

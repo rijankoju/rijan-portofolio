@@ -2,11 +2,8 @@
   "private": true,
   "name": "rijan-portfolio",
   "version": "1.0.0",
-  "description": "My Cloudflare Worker",
   "license": "Rijan License",
-  "author": "Your Name",
   "homepage": "http://rijankoju.com.np/",
-  "main": "index.js",
   "scripts": {
     "build": "react-scripts build webpack",
     "predeploy": "npm run build",

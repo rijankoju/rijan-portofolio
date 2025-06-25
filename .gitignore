@@ -25,3 +25,4 @@ yarn-debug.log*
 yarn-error.log*
 package - Copy.json
 package-lock.json
+/bun.lockb

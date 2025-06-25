@@ -4,7 +4,7 @@ import Footer from "../../components/footer/Footer";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { contactPageData } from "../../portfolio.js";
+import { contactPageData } from "../../portfolio";
 import { style } from "glamor";
 
 const ContactData = contactPageData.contactSection;

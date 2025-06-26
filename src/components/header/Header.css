@@ -7,6 +7,12 @@
   margin: -10px auto;
 }
 
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .header ul {
   margin: 0;
   padding: 10px;
@@ -45,6 +51,9 @@
 /* menu */
 
 .menu {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
   font-family: "Google Sans Regular";
 }
 

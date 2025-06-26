@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import { Fade } from "react-reveal";
+import { motion } from "framer-motion";
 import { settings } from "../../portfolio";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
@@ -46,18 +46,28 @@ function Header(props) {
   }
 
   return (
-    <Fade top duration={1000} distance="20px">
-      <header className="header">
-        <div className="header-content">
-          <Link to={link} className="header-title">
-            Portfolio
-          </Link>
-          <button {...styles} onClick={changeTheme}>
-            {currTheme === "light" ? <HiMoon /> : <CgSun />}
-          </button>
-        </div>
-      </header>
-    </Fade>
+    <motion.header
+      className="header"
+      initial={{ opacity: 0, x: -40 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="header-content">
+        <nav>
+          <ul className="menu">
+            <li>
+              <Link to="/home" className="homei">Home</Link>
+            </li>
+            <li>
+              <Link to="/contact" className="cr">Contact Us</Link>
+            </li>
+          </ul>
+        </nav>
+        <button {...styles} onClick={changeTheme}>
+          {currTheme === "light" ? <HiMoon /> : <CgSun />}
+        </button>
+      </div>
+    </motion.header>
   );
 }
 

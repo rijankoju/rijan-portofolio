@@ -4,11 +4,18 @@ import Splash from "../pages/splash/Splash.jsx";
 import Contact from "../pages/contact/ContactComponent.jsx";
 import { settings } from "../portfolio";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import Header from "../components/header/Header";
 
 export default function Main(propss) {
   // Vite/React Router v6 routing
   return (
-    <BrowserRouter>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
+      <Header theme={propss.theme} setTheme={propss.setTheme} />
       <Routes>
         {settings.isSplash && (
           <Route path="/" element={<Splash theme={propss.theme} setTheme={propss.setTheme} />} />

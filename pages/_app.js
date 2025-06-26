@@ -9,7 +9,9 @@ import "../src/assests/font-awesome/css/all.css";
 
 export default function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = React.useState(
-    typeof window !== "undefined" ? localStorage.getItem("theme") || "dark" : "dark"
+    typeof window !== "undefined"
+      ? localStorage.getItem("theme") || "dark"
+      : "dark"
   );
   const useCursor = settings.useCustomCursor;
 
@@ -24,10 +26,18 @@ export default function MyApp({ Component, pageProps }) {
               ringSize={25}
               transitionTime={75}
             >
-              <Component {...pageProps} theme={themes[theme]} setTheme={setTheme} />
+              <Component
+                {...pageProps}
+                theme={themes[theme]}
+                setTheme={setTheme}
+              />
             </CursorProvider>
           ) : (
-            <Component {...pageProps} theme={themes[theme]} setTheme={setTheme} />
+            <Component
+              {...pageProps}
+              theme={themes[theme]}
+              setTheme={setTheme}
+            />
           )}
         </div>
       </>

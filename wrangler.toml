@@ -1,0 +1,9 @@
+name = "rijan-portofolio"
+pages_build_output_dir = "./build"
+compatibility_date = "2025-06-30"
+
+[env.production]
+node_compat = true
+
+[vars]
+NODE_VERSION = "18"

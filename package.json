@@ -5,7 +5,7 @@
   "license": "Rijan License",
   "homepage": "http://rijankoju.com.np/",
   "scripts": {
-    "build": "vite build",
+  "build": "bun vite build",
     "predeploy": "bun run build",
     "deploy": "gh-pages -b gh-pages -d build",
     "dev": "vite",
@@ -26,7 +26,6 @@
     "react-dom": "^18.3.1",
     "react-ga": "^3.3.0",
     "react-icons": "^4.2.0",
-    "react-rounded-image": "^2.0.15",
     "react-router-dom": "^6.23.1",
     "sass": "^1.77.0",
     "styled-components": "^6.1.8",
